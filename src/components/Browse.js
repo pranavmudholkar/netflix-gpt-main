@@ -1,8 +1,13 @@
-import React from "react";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
 
 const Browse = () => {
-  return <Header />;
+  useNowPlayingMovies();
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default Browse;
